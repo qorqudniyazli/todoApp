@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="sass/style.css" />
+  </head>
+
+  <body class="bg-light">
+    <div id="hero" class="container bg-light">
+      <button id="modeBtn" class="btn btn-dark" type="button">
+        <i class="bi bi-brightness-high fs-4"></i>
+      </button>
+      <h1 class="pt-5 pb-3 ms-3 text-dark">TODO</h1>
+
+      <div
+        class="input-group mb-5 bg-dark rounded d-flex justify-content-center align-items-center border p-2"
+        style="width: 500px; height: 70px"
+      >
+        <button
+          id="todoBtn"
+          type="button"
+          class="btn btn-light border rounded-circle mx-3"
+        >
+          Add
+        </button>
+        <input
+          id="myInput"
+          type="text"
+          class="form-control border bg-dark text-white rounded"
+          style="width: 300px; height: 50px"
+          placeholder="Create a new todo..."
+        />
+      </div>
+
+      <ol id="list" class="bg-dark rounded d-flex flex-column text-white"></ol>
+
+      <button id="clearBtn" class="btn btn-dark my-5" type="button">
+        Clear Completed
+      </button>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="JS/script.js"></script>
+  </body>
+</html>
